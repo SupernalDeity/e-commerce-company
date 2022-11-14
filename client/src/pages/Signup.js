@@ -46,40 +46,11 @@ const Signup = () => {
       </p>
       )
     } 
-    return (
-      <form onSubmit={handleFormSubmit}>
-        <input
-          placeholder="Your username"
-          name="username"
-          type="text"
-          value={formState.name}
-          onChange={handleChange}
-        />
-        <input
-          placeholder="Your email"
-          name="email"
-          type="email"
-          value={formState.email}
-          onChange={handleChange}
-        />
-        <input
-          placeholder="******"
-          name="password"
-          type="password"
-          value={formState.password}
-          onChange={handleChange}
-        />
-        <button type="submit">
-          Submit
-        </button>
-      </form>
-    );
   };
 
   return (
     <>
       <main onSubmit={handleFormSubmit}>
-        <h4>Login</h4>
         <div>
           {renderForm()}
           {error && <div>{error.message}</div>}
