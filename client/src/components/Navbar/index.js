@@ -108,8 +108,6 @@ function Navbar() {
   if (Auth.loggedIn()) {
     return (
       <>
-        <Link to="/me">{Auth.getProfile().data.username}'s profile</Link>
-        <button onClick={logout}>Logout</button>
         <div className="bg-white">
           {/* Mobile menu */}
           <Transition.Root show={mobileMenuOpen} as={Fragment}>
@@ -228,20 +226,12 @@ function Navbar() {
 
                     <div className="space-y-6 border-t border-gray-200 py-6 px-4">
                       <div className="flow-root">
-                        <a
-                          href="/signup"
+                        <button
+                          onClick={logout}
                           className="-m-2 block p-2 font-medium text-gray-900"
                         >
-                          Create an account
-                        </a>
-                      </div>
-                      <div className="flow-root">
-                        <a
-                          href="/login"
-                          className="-m-2 block p-2 font-medium text-gray-900"
-                        >
-                          Sign in
-                        </a>
+                          Logout
+                        </button>
                       </div>
                     </div>
 
@@ -312,7 +302,7 @@ function Navbar() {
                           <select
                             id="desktop-currency"
                             name="currency"
-                            className="flex items-center rounded-md border-transparent bg-gray-900 bg-none py-0.5 pl-2 pr-5 text-sm font-medium text-white focus:border-transparent focus:outline-none focus:ring-0 group-hover:text-gray-100"
+                            className="flex items-center rounded-md border-transparent bg-gray-900 bg-none py-0.5 pl-2 pr-5 text-sm font-medium text-white focus:border-transparent focus:outline-none focus:ring-0 group-hover:text-gray-200"
                           >
                             {currencies.map((currency) => (
                               <option key={currency}>{currency}</option>
@@ -329,18 +319,12 @@ function Navbar() {
                     </form>
 
                     <div className="flex items-center space-x-6">
-                      <a
-                        href="/login"
-                        className="text-sm font-medium text-white hover:text-gray-100"
+                      <button
+                        onClick={logout}
+                        className="m-2 block p-2 font-medium text-white hover:text-gray-200"
                       >
-                        Sign in
-                      </a>
-                      <a
-                        href="/signup"
-                        className="text-sm font-medium text-white hover:text-gray-100"
-                      >
-                        Create an account
-                      </a>
+                        Logout
+                      </button>
                     </div>
                   </div>
                 </div>
@@ -497,7 +481,7 @@ function Navbar() {
                           </a>
 
                           <div className="flex items-center lg:ml-8">
-                          
+
 
                             {/* Cart */}
                             <div className="ml-4 flow-root lg:ml-8">
@@ -736,7 +720,7 @@ function Navbar() {
                         <select
                           id="desktop-currency"
                           name="currency"
-                          className="flex items-center rounded-md border-transparent bg-gray-900 bg-none py-0.5 pl-2 pr-5 text-sm font-medium text-white focus:border-transparent focus:outline-none focus:ring-0 group-hover:text-gray-100"
+                          className="flex items-center rounded-md border-transparent bg-gray-900 bg-none py-0.5 pl-2 pr-5 text-sm font-medium text-white focus:border-transparent focus:outline-none focus:ring-0 group-hover:text-gray-200"
                         >
                           {currencies.map((currency) => (
                             <option key={currency}>{currency}</option>
@@ -755,13 +739,13 @@ function Navbar() {
                   <div className="flex items-center space-x-6">
                     <a
                       href="/login"
-                      className="text-sm font-medium text-white hover:text-gray-100"
+                      className="text-sm font-medium text-white hover:text-gray-200"
                     >
                       Sign in
                     </a>
                     <a
                       href="/signup"
-                      className="text-sm font-medium text-white hover:text-gray-100"
+                      className="text-sm font-medium text-white hover:text-gray-200"
                     >
                       Create an account
                     </a>
