@@ -6,6 +6,10 @@ const typeDefs = gql`
     username: String
     email: String
     password: String
+    courseOneCart: Boolean
+    courseOneOwned: Boolean
+    courseTwoCart: Boolean
+    courseTwoOwned: Boolean
   }
 
   type Auth {
@@ -20,7 +24,7 @@ const typeDefs = gql`
   }
 
   type Mutation {
-    addUser(email:String!, username:String!, password:String!): Auth
+    addUser(email:String!, username:String!, password:String!, courseOne:Boolean, courseOneCart:Boolean, courseTwo:Boolean, courseTwoCart:Boolean): Auth
     login(email:String!, password:String!): Auth
   }
 `;

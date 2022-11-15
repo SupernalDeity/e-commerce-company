@@ -18,6 +18,22 @@ const userSchema = new Schema({
     type: String,
     required: true,
     minlength: 5,
+  },
+  courseOneCart: {
+    type: Boolean,
+    default: false,
+  },
+  courseOneOwned: {
+    type: Boolean,
+    default: false,
+  },
+  courseTwoCart: {
+    type: Boolean,
+    default: false,
+  },
+  courseTwoOwned: {
+    type: Boolean,
+    default: false,
   }
 });
 
