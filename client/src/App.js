@@ -17,7 +17,21 @@ import Products from './pages/Products';
 import Order from './pages/Order';
 import Cart from './pages/Cart';
 import Navbar from './components/Navbar';
-import Css from './pages/Products/Css'
+import Evsr from './pages/Products/Evsr';
+import H2p from './pages/Products/H2p';
+import How2 from './pages/Products/How2';
+import Wdb from './pages/Products/Wdb';
+import Jsb from './pages/Products/Jsb';
+import Js10 from './pages/Products/Js10';
+import Hcfull from './pages/Products/Hcfull';
+import Hc30 from './pages/Products/Hc30';
+import Hcb from './pages/Products/Hcb';
+import Pfull from './pages/Products/Pfull';
+import P30 from './pages/Products/P30';
+import Mdbb from './pages/Products/Mdbb';
+import Efull from './pages/Products/Efull';
+import R60 from './pages/Products/R60';
+import Nfull from './pages/Products/Nfull';
 
 // Construct our main GraphQL API endpoint
 const httpLink = createHttpLink({
@@ -58,7 +72,21 @@ function App() {
             <Route path="/products" element={<Products />} />
             <Route path="/order" element={<Order />} />
             <Route path="/cart" element={<Cart />} />
-            <Route path="/product/css" element={<Css />} />
+            <Route path="/product/Evsr" element={<Evsr />} />
+            <Route path="/product/H2p" element={<H2p />} />
+            <Route path="/product/How2" element={<How2 />} />
+            <Route path="/product/Wdb" element={<Wdb />} />
+            <Route path="/product/Jsb" element={<Jsb />} />
+            <Route path="/product/Js10" element={<Js10 />} />
+            <Route path="/product/Hcfull" element={<Hcfull />} />
+            <Route path="/product/Hc30" element={<Hc30 />} />
+            <Route path="/product/Hcb" element={<Hcb />} />
+            <Route path="/product/Pfull" element={<Pfull />} />
+            <Route path="/product/P30" element={<P30 />} />
+            <Route path="/product/Mdbb" element={<Mdbb />} />
+            <Route path="/product/Efull" element={<Efull />} />
+            <Route path="/product/R60" element={<R60 />} />
+            <Route path="/product/Nfull" element={<Nfull />} />
           </Routes>
           <Footer />
         </>
