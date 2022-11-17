@@ -36,10 +36,10 @@ const resolvers = {
       const token = signToken(user);
       return { token, user };
     },
-    updateCourse: async (_, { id, courseOneOwned, courseOneCart, courseTwoOwned, courseTwoCart }) => {
+    updateCourse: async (_, { id, evsrOwned, evsrCart, h2pOwned, h2pCart,how2Owned, how2Cart,wdbOwned, wdbCart,jsbOwned, jsbCart, js10Owned, js10Cart, hcfullOwned, hcfullCart, hc30Owned, hc30Cart, hcbOwned, hcbCart, pfullOwned, pfullCart, p30Owned, p30Cart, mdbbOwned, mdbbCart, efullOwned, efullCart, r60Owned, r60Cart, nfullOwned, nfullCart }) => {
       const courses = await User.findOneAndUpdate(
       { _id: id }, 
-      { courseOneOwned, courseOneCart, courseTwoOwned, courseTwoCart },
+      { evsrOwned, evsrCart, h2pOwned, h2pCart,how2Owned, how2Cart,wdbOwned, wdbCart,jsbOwned, jsbCart, js10Owned, js10Cart, hcfullOwned, hcfullCart, hc30Owned, hc30Cart, hcbOwned, hcbCart, pfullOwned, pfullCart, p30Owned, p30Cart, mdbbOwned, mdbbCart, efullOwned, efullCart, r60Owned, r60Cart, nfullOwned, nfullCart },
       { new: true }
       );
       return courses;
