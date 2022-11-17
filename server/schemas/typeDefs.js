@@ -24,8 +24,12 @@ const typeDefs = gql`
   }
 
   type Mutation {
-    addUser(email:String!, username:String!, password:String!, courseOne:Boolean, courseOneCart:Boolean, courseTwo:Boolean, courseTwoCart:Boolean): Auth
+    addUser(email:String!, username:String!, password:String!): Auth
     login(email:String!, password:String!): Auth
+    updateCourse(id:ID!, 
+      courseOneOwned:Boolean, courseOneCart:Boolean, 
+      courseTwoOwned:Boolean, courseTwoCart:Boolean
+      ): User
   }
 `;
 
