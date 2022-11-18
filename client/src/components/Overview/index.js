@@ -1,7 +1,5 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-
-import { useState } from 'react'
 import { Disclosure, RadioGroup, Tab } from '@headlessui/react'
 import { StarIcon } from '@heroicons/react/20/solid'
 import { HeartIcon, MinusIcon, PlusIcon } from '@heroicons/react/24/outline'
@@ -42,9 +40,9 @@ function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
 }
 
-const index = (props) => {
+const Index = (props) => {
   return (
-    <div className="bg-white">
+    <div onSubmit={props.handleFormSubmit} className="bg-white">
       <div className="mx-auto max-w-2xl py-16 px-4 sm:py-24 sm:px-6 lg:max-w-7xl lg:px-8">
         <div className="lg:grid lg:grid-cols-2 lg:items-start lg:gap-x-8">
           {/* Image gallery */}
@@ -151,4 +149,4 @@ const index = (props) => {
   )
 }
 
-export default index
+export default Index
