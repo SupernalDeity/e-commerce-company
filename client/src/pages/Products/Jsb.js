@@ -9,8 +9,8 @@ const price = '$25'
 const description = `
 <p>Learn the basics of Javascript.</p>
 `
-const imgSrc = 'https://tailwindui.com/img/ecommerce-images/product-page-03-product-01.jpg'
-const imgAlt = 'Angled front view with bag zipped and handles upright.'
+const imgSrc = 'https://res.cloudinary.com/dycrfr57i/image/upload/v1669135963/Course%20Images/6_cuffal.png'
+const imgAlt = 'JavaScript Beginners Course Image'
 const features = [
   'Issa video',
 ]

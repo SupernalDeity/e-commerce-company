@@ -74,7 +74,7 @@ const products = [
     id: 9,
     name: 'JavaScript Tutorial for Beginners: Learn JavaScript in 1 Hour',
     href: '/product/Jsb',
-    price: '$49.99',
+    price: '$25',
     imageSrc: 'https://res.cloudinary.com/dycrfr57i/image/upload/v1669135963/Course%20Images/6_cuffal.png',
     imageAlt: 'JavaScript Beginners Course Image',
   },
@@ -124,7 +124,7 @@ const products = [
     href: '/product/Wdb',
     price: '$25',
     imageSrc: 'https://res.cloudinary.com/dycrfr57i/image/upload/v1669135963/Course%20Images/2_hsfmo2.png',
-    imageAlt: 'HWeb Development Course Image',
+    imageAlt: 'Web Development Course Image',
   },
   // More products...
 ]

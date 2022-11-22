@@ -9,8 +9,8 @@ const price = '$15'
 const description = `
 <p>A guide to python, but faster.</p>
 `
-const imgSrc = 'https://tailwindui.com/img/ecommerce-images/product-page-03-product-01.jpg'
-const imgAlt = 'Angled front view with bag zipped and handles upright.'
+const imgSrc = 'https://res.cloudinary.com/dycrfr57i/image/upload/v1668794844/Course%20Images/4_occagv.png'
+const imgAlt = 'Python Basics Course Image'
 const features = [
   'Issa video',
 ]

@@ -9,8 +9,8 @@ const price = '$25'
 const description = `
 <p>A guide to MongoDB for new learners.</p>
 `
-const imgSrc = 'https://tailwindui.com/img/ecommerce-images/product-page-03-product-01.jpg'
-const imgAlt = 'Angled front view with bag zipped and handles upright.'
+const imgSrc = 'https://res.cloudinary.com/dycrfr57i/image/upload/v1669135963/Course%20Images/9_rkn46k.png'
+const imgAlt = 'MongoDB Beginners Course Image'
 const features = [
   'Issa video',
 ]
