@@ -17,7 +17,6 @@ const features = [
 
 const Jsb = () => {
   const currentUserId = auth.getProfile();
-  
   const [formState, setFormState] = useState({
     updateCourseId: currentUserId.data._id,
     jsbCart: true,

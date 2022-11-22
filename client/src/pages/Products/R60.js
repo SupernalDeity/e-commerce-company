@@ -17,7 +17,6 @@ const features = [
 
 const R60 = () => {
   const currentUserId = auth.getProfile();
-
   const [formState, setFormState] = useState({
     updateCourseId: currentUserId.data._id,
     r60Cart: true,

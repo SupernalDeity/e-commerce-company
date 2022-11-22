@@ -17,7 +17,6 @@ const features = [
 
 const Hcfull = () => {
   const currentUserId = auth.getProfile();
-
   const [formState, setFormState] = useState({
     updateCourseId: currentUserId.data._id,
     hcfullCart: true,

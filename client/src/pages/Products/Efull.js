@@ -17,7 +17,6 @@ const features = [
 
 const Efull = () => {
   const currentUserId = auth.getProfile();
-
   const [formState, setFormState] = useState({
     updateCourseId: currentUserId.data._id,
     efullCart: true,
