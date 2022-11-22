@@ -9,8 +9,8 @@ const price = '$25'
 const description = `
 <p>A comprehensive guide to Node.js.</p>
 `
-const imgSrc = 'https://tailwindui.com/img/ecommerce-images/product-page-03-product-01.jpg'
-const imgAlt = 'Angled front view with bag zipped and handles upright.'
+const imgSrc = 'https://res.cloudinary.com/dycrfr57i/image/upload/v1668794832/Course%20Images/16_bxlawu.png'
+const imgAlt = 'Node.js Complete Course Image'
 const features = [
   'Issa video',
 ]

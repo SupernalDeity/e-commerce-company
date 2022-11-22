@@ -9,8 +9,8 @@ const price = '$25'
 const description = `
 <p>A comprehensive guide to React.js aimed at beginners. Learn all you need to know in just an hour!</p>
 `
-const imgSrc = 'https://tailwindui.com/img/ecommerce-images/product-page-03-product-01.jpg'
-const imgAlt = 'Angled front view with bag zipped and handles upright.'
+const imgSrc = 'https://res.cloudinary.com/dycrfr57i/image/upload/v1668794844/Course%20Images/6_pvzcns.png'
+const imgAlt = 'React.js Course Image'
 const features = [
   'Issa video',
 ]
