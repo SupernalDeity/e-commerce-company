@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import Overview from '../../components/Overview'
 import { useMutation } from '@apollo/client';
 import { UPDATE_COURSE } from '../../utils/mutations';
+import auth from '../../utils/auth';
 
 const name = 'React.js Tutorial For Beginners: Learn React in 1 Hour'
 const price = '$25'
@@ -15,8 +16,10 @@ const features = [
 ]
 
 const R60 = () => {
+  const currentUserId = auth.getProfile();
+
   const [formState, setFormState] = useState({
-    updateCourseId: '636e9c69dab6c2650414da4c',
+    updateCourseId: currentUserId.data._id,
     r60Cart: true,
   });
   const [updateCourse, { error, data }] = useMutation(UPDATE_COURSE);
